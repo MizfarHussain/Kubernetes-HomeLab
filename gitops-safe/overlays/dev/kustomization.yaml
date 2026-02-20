@@ -1,0 +1,19 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- ../../base
+
+patchesStrategicMerge:
+- gitops-test-patch.yaml
+
+commonLabels:
+  app.kubernetes.io/name: humor-game
+  app.kubernetes.io/instance: dev
+  app.kubernetes.io/part-of: gitops-demo
+  app.kubernetes.io/managed-by: argocd
+
+commonAnnotations:
+  argocd.argoproj.io/tracking-id: humor-game-monitor:/kustomization.yaml
+  gitops.argoproj.io/description: "Safe GitOps monitoring for Humor Game"
+
