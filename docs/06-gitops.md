@@ -609,8 +609,8 @@ You've implemented professional GitOps workflows:
 **Next Steps:**
 - Explore ArgoCD UI to understand GitOps workflow
 - Test manual sync to see GitOps in action
-- Ready for [07-global.md](07-global.md)
+
 
 ---
 
-*GitOps milestone completed successfully. ArgoCD running, applications configured, ready for [07-global.md](07-global.md).*
+
